@@ -20,3 +20,12 @@ Vérifier que le disque est maintenant en lecture-écriture "rw". Exemple :
     /dev/sda2 on /media/BluBook type hfsplus (rw,nosuid,nodev,relatime,umask=22,uid=0,gid=0,nls=utf8,uhelper=udisks)
     
 [read-only]: http://superuser.com/a/348870
+
+
+# Mac Fusion
+
+Installer OSXFuse (ex MacFUSE) puis Mac Fusion.
+Monter ensuite /mount/point depuis MacFusion. Une connexion sshfs sera établie.
+Via ssh ajouter les droits au dossier voulu avec
+
+    sudo chmod o+w /mount/point/dossier

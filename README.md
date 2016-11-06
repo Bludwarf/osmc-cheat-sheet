@@ -41,7 +41,7 @@ La correction appliquée à la date doit s'afficher. Relancer alors le service N
 
     sudo systemctl start ntp
 
-Vérifier la correction au bout d'une minute :
+Vérifier la correction au bout d'une minute (une ligne préfixée * => synchro NTP) :
 
     ntpq -p
 

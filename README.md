@@ -29,3 +29,20 @@ Monter ensuite /mount/point depuis MacFusion. Une connexion sshfs sera établie.
 Via ssh ajouter les droits au dossier voulu avec
 
     sudo chmod o+w /mount/point/dossier
+
+# [Date] (NTP)
+
+Couper le service NTP et relancer le démon :
+
+    sudo systemctl stop ntp
+    sudo ntpd -qg
+
+La correction appliquée à la date doit s'afficher. Relancer alors le service NTP :
+
+    sudo systemctl start ntp
+
+Vérifier la correction au bout d'une minute :
+
+    ntpq -p
+
+[date]: https://discourse.osmc.tv/t/fix-date-and-time/3120/13?u=bludwarf

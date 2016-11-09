@@ -18,8 +18,6 @@ Le remonter avec la commande :
 Vérifier que le disque est maintenant en lecture-écriture "rw". Exemple :
 
     /dev/sda2 on /media/BluBook type hfsplus (rw,nosuid,nodev,relatime,umask=22,uid=0,gid=0,nls=utf8,uhelper=udisks)
-    
-[read-only]: http://superuser.com/a/348870
 
 
 # Mac Fusion
@@ -46,3 +44,13 @@ Vérifier la correction au bout d'une minute (une ligne préfixée * => synchro 
     ntpq -p
 
 [date]: https://discourse.osmc.tv/t/fix-date-and-time/3120/13?u=bludwarf
+
+# Node JS
+
+Installation ([source][njsi]) :
+
+    curl -sL https://deb.nodesource.com/setup_7.x | sudo -E bash -
+    sudo apt install nodejs
+
+[njsi]: http://thisdavej.com/beginners-guide-to-installing-node-js-on-a-raspberry-pi/
+[read-only]: http://superuser.com/a/348870

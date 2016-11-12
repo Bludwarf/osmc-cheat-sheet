@@ -52,5 +52,18 @@ Installation ([source][njsi]) :
     curl -sL https://deb.nodesource.com/setup_7.x | sudo -E bash -
     sudo apt install nodejs
 
+# Sécurité
+
+## SSH
+
+Clé privée et clé publique :
+
+    ssh-keygen
+
+Certificat et clé privée ([source][cert]) :
+
+    openssl req -x509 -newkey rsa:4096 -keyout myApp.key -out myApp.crt -days 365
+
 [njsi]: http://thisdavej.com/beginners-guide-to-installing-node-js-on-a-raspberry-pi/
 [read-only]: http://superuser.com/a/348870
+[cert]: http://stackoverflow.com/a/10176685/1655155

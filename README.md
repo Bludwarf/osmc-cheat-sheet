@@ -62,7 +62,9 @@ Clé privée et clé publique :
 
 Certificat et clé privée ([source][cert]) :
 
-    openssl req -x509 -newkey rsa:4096 -keyout myApp.key -out myApp.crt -days 365
+    openssl req -x509 -nodes -newkey rsa:4096 -keyout myApp.key -out myApp.crt -days 365
+
+L'option `-nodes` pour ne pas mettre de mot de passe à la clé privée.
 
 [njsi]: http://thisdavej.com/beginners-guide-to-installing-node-js-on-a-raspberry-pi/
 [read-only]: http://superuser.com/a/348870

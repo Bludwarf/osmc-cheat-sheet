@@ -66,6 +66,17 @@ Certificat et clé privée ([source][cert]) :
 
 L'option `-nodes` pour ne pas mettre de mot de passe à la clé privée.
 
+# Scripts au démarrage
+
+Utiliser le fichier rc.local
+
+    sudo nano /etc/rc.local
+
+Ou utiliser cron :
+
+    sudo apt-get install cron
+    crontab -e
+
 [njsi]: http://thisdavej.com/beginners-guide-to-installing-node-js-on-a-raspberry-pi/
 [read-only]: http://superuser.com/a/348870
 [cert]: http://stackoverflow.com/a/10176685/1655155

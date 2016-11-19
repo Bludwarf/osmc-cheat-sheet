@@ -68,7 +68,7 @@ L'option `-nodes` pour ne pas mettre de mot de passe à la clé privée.
 
 # Scripts au démarrage
 
-Utiliser le fichier rc.local
+Utiliser le fichier rc.local ([doc][doc-rc])
 
     sudo nano /etc/rc.local
 
@@ -80,3 +80,4 @@ Ou utiliser cron :
 [njsi]: http://thisdavej.com/beginners-guide-to-installing-node-js-on-a-raspberry-pi/
 [read-only]: http://superuser.com/a/348870
 [cert]: http://stackoverflow.com/a/10176685/1655155
+[doc-rc]: https://www.raspberrypi.org/documentation/linux/usage/rc-local.md

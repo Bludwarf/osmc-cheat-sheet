@@ -76,6 +76,10 @@ Ou utiliser cron :
 
     sudo apt-get install cron
     crontab -e
+    
+# Filesystem
+
+Agrandir le filesystem à la carte SD : [lien](http://raspberrypi.stackexchange.com/a/501)
 
 [njsi]: http://thisdavej.com/beginners-guide-to-installing-node-js-on-a-raspberry-pi/
 [read-only]: http://superuser.com/a/348870

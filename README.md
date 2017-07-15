@@ -1,4 +1,9 @@
 # Read-only ([source][read-only])
+
+Si c'est le cas désactiver la journalisation du disque HFS+ avec la commande :
+
+    sudo diskutil disableJournal volumeName
+
 Installer le programme suivant :
 
     sudo apt-get install hfsprogs

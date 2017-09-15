@@ -20,6 +20,8 @@ Le remonter avec la commande :
 
     sudo mount -o remount,rw,force /mount/point
     
+Si le démontage est bloqué parce qu'OSMC l'utilise, l'éjecter depuis l'interface OSMC. Puis le remonter manuellement... (détails ?)
+    
 Vérifier que le disque est maintenant en lecture-écriture "rw". Exemple :
 
     /dev/sda2 on /media/BluBook type hfsplus (rw,nosuid,nodev,relatime,umask=22,uid=0,gid=0,nls=utf8,uhelper=udisks)

@@ -88,6 +88,22 @@ Ou utiliser cron :
 
 Agrandir le filesystem à la carte SD : [lien](http://raspberrypi.stackexchange.com/a/501)
 
+# NFS
+
+Ne pas utiliser une source en NFS dans OSMC mais faire un montage sur la raspberry.
+
+```
+sudo nano /etc/fstab
+```
+
+Ajouter la ligne suivante :
+
+```
+blucloud:/nfs/Public  /mnt/blucloud nfs      rw,tcp,soft,intr,noatime,noauto,x-systemd.automount 0 0
+```
+
+Redémarrer
+
 [njsi]: http://thisdavej.com/beginners-guide-to-installing-node-js-on-a-raspberry-pi/
 [read-only]: http://superuser.com/a/348870
 [cert]: http://stackoverflow.com/a/10176685/1655155

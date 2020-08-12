@@ -26,6 +26,12 @@ Vérifier que le disque est maintenant en lecture-écriture "rw". Exemple :
 
     /dev/sda2 on /media/BluBook type hfsplus (rw,nosuid,nodev,relatime,umask=22,uid=0,gid=0,nls=utf8,uhelper=udisks)
 
+Pour éditer le point de montage :
+
+    vi /etc/fstab
+
+[ ] Problème de DNS avec la Freebox
+
 
 # Mac Fusion
 
